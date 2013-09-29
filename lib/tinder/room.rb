@@ -165,7 +165,7 @@ module Tinder
         :host => "streaming.#{Connection::HOST}",
         :path => room_url_for('live'),
         :auth => "#{auth[:username]}:#{auth[:password]}",
-        :timeout => 6,
+        :timeout => 60,
         :ssl => connection.options[:ssl]
       }.merge(options)
 

@@ -179,7 +179,7 @@ describe Tinder::Room do
           :host=>"streaming.campfirenow.com",
           :path=>"/room/80749/live.json",
           :auth=>"mytoken:X",
-          :timeout=>6,
+          :timeout=>60,
           :ssl=>true
         }
       ).and_return(@stream)
